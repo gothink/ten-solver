@@ -1,0 +1,7 @@
+name = "solver-wasm"
+compatibility_date = "2023-01-21"
+
+workers_dev = false
+
+[build]
+command = "npm run build"

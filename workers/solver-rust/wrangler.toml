@@ -1,0 +1,16 @@
+name = "solver-rust"
+main = "build/worker/shim.mjs"
+compatibility_date = "2022-01-20"
+
+workers_dev = false
+
+routes = [
+    { pattern = "solve4x.gothink.dev", custom_domain = true, zone_name = "gothink.dev" }
+]
+
+kv_namespaces = [
+  { binding = "SOLVER_KV", id = "0ea81a03ca63451c9252f333a53574b1", preview_id = "7358ee3c71ce47a088e651ebd7c7561b" }
+]
+
+[build]
+command = "cargo install -q worker-build --version 0.0.7 && worker-build --release"

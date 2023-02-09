@@ -1,0 +1,9 @@
+name = "ten-solver"
+main = "src/index.js"
+compatibility_date = "2023-01-19"
+
+workers_dev = false
+
+kv_namespaces = [
+  { binding = "SOLVER_KV", id = "ba7ebfbbebf64796815c23be84cda0a3", preview_id = "f862d2be8a60400d9ca361c4a9a32fa1" }
+]
