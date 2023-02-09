@@ -116,7 +116,7 @@ function randomNumbers() {
                 </button>
             </div>
             <div v-if="show">
-                <ul>
+                <ul class="max-w-fit mx-auto">
                     <li class="my-1" v-for="solution in parsed_solutions">
                         {{ solution }}
                     </li>
